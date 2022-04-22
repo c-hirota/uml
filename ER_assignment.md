@@ -1,8 +1,8 @@
 ``` mermaid
     erDiagram
-        STUDENT ||--o{ COURSE
-        COURSE ||--o{ CLASS
-        STUDENT }|--o{ CLASS
+        STUDENT ||--o{ COURSE: registers
+        COURSE ||--o{ CLASS: contains
+        STUDENT }|--o{ CLASS: belongs_to
         STUDENT {
             number id
             string name
